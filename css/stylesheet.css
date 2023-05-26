@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+:root {
+    --bg-color-1: #0000;
+    --btn-bg: linear-gradient(90deg, #F66844 0%, #FF921B 100%);
+    --text-color: #FF921B;
+    --font-family: 'Noto Sans';
+    --bg-color-2: #ff921b;
+}
+
+.btn-style {
+    width: 80px;
+    height: 38px;
+    border: none;
+    outline: none;
+    font-family: var(--font-family);
+    margin-left: 10px;
+    background: linear-gradient(90deg, #F66844 0%, #FF921B 100%);
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.heading-style {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFFFFF;
+}
+
+header {
+    background-color: #000;
+}
+
+.nav-link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF !important;
+    margin: 0px 13px;
+    position: relative;
+}
+
+.nav-link::before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: var(--text-color);
+    left: 0%;
+    bottom: -9%;
+    transition: 0.2s;
+    left: 50%;
+
+}
+
+.nav-link:hover::before {
+    width: 100%;
+    left: 0%;
+}
+
+.navbar-brand img {
+    width: 199.25px;
+    height: 58px;
+    object-fit: contain;
+}
+
+.Join {
+    width: 80px;
+    height: 38px;
+    border: none;
+    outline: none;
+    font-family: var(--font-family);
+    margin-left: 10px;
+    background: linear-gradient(90deg, #F66844 0%, #FF921B 100%);
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.menu {
+
+    display: none !important;
+}
+
+/* navbar close  */
+.banner-section {
+    min-height: 100vh;
+    background-image: url(../images/banner-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.banner-section .left-text {
+    padding-top: 120px;
+}
+
+.banner-section .left-text h2 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 75px;
+    color: #FFFFFF;
+    width: 100%;
+    max-width: 400px;
+}
+
+.banner-section .left-text p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    max-width: 400px;
+    padding-top: 22PX;
+}
+
+.banner-section .btns {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.banner-section .Get-Started {
+    max-width: 136px;
+    width: 100%;
+    height: 44px;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-family: var(--font-family);
+    background: linear-gradient(90deg, #F66844 0%, #FF921B 100%, rgba(255, 255, 255, 0) 100%);
+}
+
+.banner-section .video-btn {
+    margin-left: 22px;
+    width: 100%;
+    max-width: 174px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    border: 1px solid;
+    border-image: linear-gradient(45deg, #F66844, #FF921B) 1;
+    padding: 12px;
+    overflow: hidden;
+    position: relative;
+    z-index: 7;
+    transition: 0.2s;
+}
+
+.banner-section .video-btn::before {
+    position: absolute;
+    content: '';
+    width: 174px;
+    height: 0px;
+    left: 0%;
+    top: 0%;
+    z-index: -7;
+    transition: 0.6s;
+
+}
+
+.banner-section .video-btn:hover::before {
+    height: 44px;
+    background-color: var(--bg-color-2);
+}
+
+.banner-section .video-btn:hover {
+    color: white;
+}
+
+
+.banner-section .video-btn .Watch {
+    border: none;
+    color: #FFF;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+
+
+}
+
+.banner-section .icons {
+    background-image: url("../images/shape.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 245px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+}
+
+.banner-section .icons img {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+}
+
+/* banner section css close  */
+.cards {
+    padding: 50px 0px 50px 0px;
+    background: #000;
+}
+
+.cards .padding {
+    padding-bottom: 25px;
+}
+
+.cards .card-style {
+    text-align: center;
+    margin-top: 45px;
+    padding-bottom: 45px;
+    padding-top: 7px;
+}
+
+.cards .border-left {
+    border-left: 1px solid var(--bg-color-2);
+    border-right: 1px solid var(--bg-color-2);
+}
+
+.cards .top-border {
+    border-top: 1px solid var(--bg-color-2);
+}
+
+.cards .card-style img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.card-style .text {
+    margin-top: 23px;
+}
+
+.card-style .text h5 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.card-style .text p {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 29px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    max-width: 335px;
+}
+
+/* cards section css close  */
+.Plans {
+    padding: 50px 0px 50px 0px;
+    background-color: #000;
+}
+
+.Plans #padding-gap {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.Plans .Plans-card {
+    text-align: center;
+    transition: 0.2s;
+    min-height: 400px !important;
+    background: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.Plans .Plans-card::before {
+    position: absolute;
+    content: 'Recommended';
+    width: 141px;
+    height: 36px;
+    background-color: white;
+    top: -2%;
+    padding: 6px 20px 10px 20px;
+    background: linear-gradient(90deg, #F66844 0%, #FF921B 100%, rgba(255, 255, 255, 0) 100%);
+    color: white;
+    display: none;
+    transition: 0.2s;
+}
+
+.Plans .Plans-card:hover::before {
+    display: block;
+    cursor: pointer;
+}
+
+.Plans .Plans-card:hover {
+    transform: translateY(-20px);
+}
+
+.Plans .Plans-card h5 {
+    font-size: 27px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.Plans .Plans-card P {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 19px;
+}
+
+.Plans .Plans-card h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding-top: 28px;
+}
+
+.Plans .Plans-card .Month {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 2px;
+}
+
+.Plans .Plans-card .Select {
+    width: 100%;
+    max-width: 200px;
+    height: 44px;
+    border: 1px solid #FF921B !important;
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 19px;
+}
+
+.nav-link::before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: var(--text-color);
+    left: 0%;
+    bottom: -9%;
+    transition: 0.2s;
+    left: 50%;
+
+}
+
+.nav-link:hover::before {
+    width: 100%;
+    left: 0%;
+}
+
+.Plans .padding-bottom {
+    margin-top: 21px;
+}
+
+/* section clsoe  */
+.Trainer {
+    padding: 50px 0px 50px 0px;
+    background-color: #000;
+}
+
+.Trainer img {
+    width: 100%;
+}
+
+.Trainer .gap-set {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* section close  */
+.Why {
+    padding: 50px 0px 50px 0px;
+    background-color: #000;
+}
+
+.Why .left-side-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.Why .padding {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding: 20px 0px;
+    position: relative;
+}
+
+.Why .padding::before {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    position: absolute;
+    content: '';
+    background-color: #FF921B;
+    left: -3%;
+    top: 39%;
+}
+.Why .pics-set{
+    position: relative;
+}
+.Why .img-top {
+    transform: translateY(-90px);
+}
+.Why .img-bottom {
+    transform: translateX(10px);
+
+}

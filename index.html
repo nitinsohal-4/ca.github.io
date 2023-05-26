@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- bootstrap css file  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- font-fmaily-cdn  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozp
+    /E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container container-md">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+        <!-- toggle btn animtion  -->
+        <button class="menu" id="set" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+          aria-label="Main Menu">
+          <svg width="60" height="60" viewBox="0 0 100 100">
+            <path class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
+        <!-- toggle btn animtion close -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacts</a>
+            </li>
+          </ul>
+          <button class="btn-style">Join Us</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- bootstrap js file  -->
+  <!-- navabr close  -->
+
+  <!-- banner-section -->
+  <section class="banner-section">
+    <div class="container">
+      <div class="left-text">
+        <h2>Transform Your Body</h2>
+        <p>We are dedicated to helping you transform your
+          body and mind through the power of fitness.</p>
+        <div class="btns">
+          <button class="Get-Started">Get Started</button>
+          <div class="video-btn">
+            <img src="images/play_circle.png" alt="">
+            <span class="Watch">Watch Reviews</span>
+          </div>
+        </div>
+        <div class="icons">
+          <img src="images/facebook.png" alt="">
+          <img src="images/youtube (1).png" alt="">
+          <img src="images/google 1.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- banner-section close-->
+
+  <!-- cards section strat  -->
+  <section class="cards">
+    <div class="container">
+      <!-- heading  -->
+      <h3 class="heading-style  padding">Fitness Plans &<span style="color:var(--text-color)">Nutritions</span></h3>
+      <div class="row mt-5 ">
+        <div class="col-md-4 col-sm-6 col-12" >
+          <div class="card-style">
+            <div class="img">
+              <img src="images/workout 1.png" alt="">
+            </div>
+            <div class="text">
+              <h5>Weight Loss</h5>
+              <p>Weight loss can have causes that aren't due to underlying disease. Examples include dieting, exercise,
+                malnutrition or lack of access to food.</p>
+            </div>
+            
+
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12  border-left ">
+          <div class="card-style">
+            <div class="img">
+              <img src="images/yoga 1.png" alt="">
+            </div>
+            <div class="text">
+              <h5>Classic Yoga</h5>
+              <p>Weight loss can have causes that aren't due to underlying disease. Examples include dieting, exercise,
+                malnutrition or lack of access to food.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card-style">
+            <div class="img">
+              <img src="images/bicycle 1.png" alt="">
+            </div>
+            <div class="text">
+              <h5>Cycling</h5>
+              <p>Weight loss can have causes that aren't due to underlying disease. Examples include dieting, exercise,
+                malnutrition or lack of access to food.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 top-border ">
+          <div class="card-style">
+            <div class="img">
+              <img src="images/biceps.png" alt="">
+            </div>
+            <div class="text">
+              <h5>Body Building</h5>
+              <p>Weight loss can have causes that aren't due to underlying disease. Examples include dieting, exercise,
+                malnutrition or lack of access to food.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 top-border  border-left ">
+          <div class="card-style">
+            <div class="img">
+              <img src="images/fitness.png" alt="">
+            </div>
+            <div class="text">
+              <h5>Musculation</h5>
+              <p>Weight loss can have causes that aren't due to underlying disease. Examples include dieting, exercise,
+                malnutrition or lack of access to food.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4  col-sm-6 col-12 top-border ">
+          <div class="card-style">
+            <div class="img">
+              <img src="images/runer-silhouette-running-fast.png" alt="">
+            </div>
+            <div class="text">
+              <h5>Fitness Running</h5>
+              <p>Weight loss can have causes that aren't due to underlying disease. Examples include dieting, exercise,
+                malnutrition or lack of access to food.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- cards section close-->
+  <section class="Plans">
+    <div class="container">
+      <h3 class="heading-style pb-2">Subscribe To <span style="color:var(--text-color)">Plans</span></h3>
+        <div class="row mt-5">
+          <div class="col-md-4" id="padding-gap">
+            <div class="Plans-card">
+              <div class="text">
+                <h5>Fit</h5>
+                <p>Plan Exp.  16/11/2024</p>
+                <h4> ₹1200<span class="Month"> /Month </span></h4>
+                <p class="mt-2"> Streaming</p>
+                <button class="Select"> Select Plan</button>
+              </div>
+             
+            </div>
+          </div>
+          <div class="col-md-4" id="padding-gap">
+            <div class="Plans-card ">
+              <div class="text">
+                <h5>Fit</h5>
+                <p>Plan Exp.  16/11/2024</p>
+                <h4> ₹1200<span class="Month"> /Month </span></h4>
+                <p class="mt-2"> Streaming</p>
+                <button class="Select"> Select Plan</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" id="padding-gap">
+            <div class="Plans-card">
+              <div class="text">
+                <h5>Fit</h5>
+                <p>Plan Exp.  16/11/2024</p>
+                <h4> ₹1200<span class="Month"> /Month </span></h4>
+                <p class="mt-2"> Streaming</p>
+                <button class="Select"> Select Plan</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- section close  -->
+  <section class="Trainer">
+    <div class="container">
+      <h3 class="heading-style pb-4">Join Out  <span style="color:var(--text-color)">Trainer</span></h3>
+      <div class="row mt-5">
+        <div class="col-md-4 col-sm-6 col-12 gap-set">
+          <img src="images/one-1.png" alt="">
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 gap-set">
+          <img src="images/two-2.png" alt="">
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 gap-set">
+          <img src="images/three-3.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- section close  --> 
+  <section class="Why">
+    <div class="container">
+    <h3 class="heading-style">Join Out  <span style="color:var(--text-color)">Trainer</span></h3>
+      <div class="row mt-5">
+        <div class="col-md-6 ">
+          <div class="left-side-text">
+            <span class="padding">Best Gym</span>
+            <span class="padding">Experts Coach</span>
+            <span class="padding">Good Workout Facilities</span>
+            <span class="padding">Consultation With Experts</span>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-end">
+          <div class="pics-set">
+            <img src="images/women.png" alt="" class= "img-top">
+            <img src="images/men (1).png" alt="" class="img-bottom">
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
