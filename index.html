@@ -2,258 +2,412 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- bootstrap css file  -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/stylesheet.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <!-- font-fmaily-cdn  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozp
-    /E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <!-- stylesheet  -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- font-awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owl slider cdn css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light ">
-      <div class="container container-md">
-        <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
-        <!-- toggle btn animtion  -->
-        <button class="menu" id="set" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation"
-          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
-          aria-label="Main Menu">
-          <svg width="60" height="60" viewBox="0 0 100 100">
-            <path class="line line1"
-              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-            <path class="line line2" d="M 20,50 H 80" />
-            <path class="line line3"
-              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-          </svg>
-        </button>
-        <!-- toggle btn animtion close -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacts</a>
-            </li>
-          </ul>
-          <button class="btn-style">Join Us</button>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!-- bootstrap js file  -->
-  <!-- navabr close  -->
-
-  <!-- banner-section -->
-  <section class="banner-section">
-    <div class="container">
-      <div class="left-text">
-        <h2>Transform Your Body</h2>
-        <p>We are dedicated to helping you transform your
-          body and mind through the power of fitness.</p>
-        <div class="btns">
-          <button class="Get-Started">Get Started</button>
-          <div class="video-btn">
-            <img src="images/play_circle.png" alt="">
-            <span class="Watch">Watch Reviews</span>
-          </div>
-        </div>
-        <div class="icons">
-          <img src="images/facebook.png" alt="">
-          <img src="images/youtube (1).png" alt="">
-          <img src="images/google 1.png" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- banner-section close-->
-
-  <!-- cards section strat  -->
-  <section class="cards">
-    <div class="container">
-      <!-- heading  -->
-      <h3 class="heading-style  padding">Fitness Plans &<span style="color:var(--text-color)">Nutritions</span></h3>
-      <div class="row mt-5 ">
-        <div class="col-md-4 col-sm-6 col-12" >
-          <div class="card-style">
-            <div class="img">
-              <img src="images/workout 1.png" alt="">
+    <!-- ========== Start header ========== -->
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid edit-one">
+                <a class="navbar-brand" href="#">
+                    <h4 class="logo-style"> SYNC<br>EXPERTS</h4>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SOLUTIONS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" class="color-set"> GET STARTED</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+    </header>
+    <!-- ========== End header ========== -->
+
+    <!-- ========== Start banner-section ========== -->
+    <section class="banner">
+        <div class="container-fluid edit-one">
+            <div class="row ">
+                <div class="col-md-12 col-sm-12 col-xs-12  ">
+                    <div class="text">
+                        <h3>YOUR RELIABLE
+                            CLOUD MIGRATION
+                            & SECURITY SOLUTIONS</h3>
+                        <button class="btn-style"> ABOUT US</button>
+                        <button class="btn-2">GET STARTED</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End banner-section ========== -->
+
+    <!-- ========== Start bg-color ========== -->
+    <section class="bg-color">
+        <div class="container">
+        </div>
+    </section>
+    <!-- ========== End bg-color ========== -->
+
+    <!-- ========== Start cards ========== -->
+    <section class="cards">
+        <div class="container">
+            <div class="set-top">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 set-padding">
+                        <div class="style-box">
+                            <div class="img-box">
+                                <img src="images/arrow-2_-removebg-preview.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h4>CLOUD
+                                    MIGRATION</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 set-padding">
+                        <div class="style-box">
+                            <div class="img-box">
+                                <img src="images/arrow-2_-removebg-preview.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h4>MICROSOFT
+                                    365 SOLUTIONS </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 set-padding">
+                        <div class="style-box">
+                            <div class="img-box">
+                                <img src="images/arrow-2_-removebg-preview.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h4>CLOUD
+                                    MIGRATION</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="ABOUT">ABOUT US</h4>
+            <!-- row-2 -->
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-12 ">
+                    <div class="text-2">
+                        <p>Lorem Ipsum text goes here. Space for dummy text which shall be replaced once we have
+                            replacement for the same. Lorem Ipsum text goes here. Space for dummy text which shall be
+                            replaced once we have replacement for the same. Lorem Ipsum text goes here. Space for dummy
+                            text which shall be replaced once we have replacement for the same. Lorem Ipsum text goes
+                            here. Space for dummy text which shall be replaced once we have replacement for the same.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-12 ">
+                    <div class="text-2">
+                        <p>Lorem Ipsum text goes here. Space for dummy text which shall be replaced once we have
+                            replacement for the same. Lorem Ipsum text goes here. Space for dummy text which shall be
+                            replaced once we have replacement for the same. Lorem Ipsum text goes here. Space for dummy
+                            text which shall be replaced once we have replacement for the same. Lorem Ipsum text goes
+                            here. Space for dummy text which shall be replaced once we have replacement for the same.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End cards ========== -->
+
+    <!-- ========== Start banner-2 ========== -->
+    <section class="banner-2">
+        <div class="container">
             <div class="text">
-              <h5>Weight Loss</h5>
-              <p>Weight loss can have causes that aren't due to underlying disease. Examples include dieting, exercise,
-                malnutrition or lack of access to food.</p>
+                <h5>Lightning Fast
+                    Cloud Migration</h5>
+                <p>Lorem Ipsum text goes here. Space for dummy text which shall be replaced once we have replacement for
+                    the same. Lorem Ipsum text goes here. Space for dummy text which shall be replaced once we have
+                    replacement for the same.</p>
+                <button class="btn-style add-margin"> GET STARTED</button>
             </div>
-            
+        </div>
+    </section>
+    <!-- ========== End banner-2 ========== -->
 
-          </div>
+    <!-- ========== Start cards-section ========== -->
+    <section class="cards-section">
+        <div class="container">
+            <h5 class="RECENT">RECENT UPDATES</h5>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="style-box">
+                        <div class="img">
+                            <img src="images/c-1 (1).jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="set-li">
+                                <li>
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <span> jul 08, 2021</span>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-comment-dots"></i>
+                                    <span>1 commenet</span>
+                                </li>
+                            </div>
+                            <h2>being the best selling smartphone in this year</h2>
+                            <p>lorem ipsume dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
+                                incicdidunt ut labore et dolore magna aliqua minim..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="style-box">
+                        <div class="img">
+                            <img src="images/c-2.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="set-li">
+                                <li>
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <span> jul 08, 2021</span>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-comment-dots"></i>
+                                    <span>1 commenet</span>
+                                </li>
+                            </div>
+                            <h2>love songs helped me through heartbreak</h2>
+                            <p>lorem ipsume dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
+                                incicdidunt ut labore et dolore magna aliqua minim..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="style-box">
+                        <div class="img">
+                            <img src="images/c-3.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="set-li">
+                                <li>
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <span> jul 08, 2021</span>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-comment-dots"></i>
+                                    <span>1 commenet</span>
+                                </li>
+                            </div>
+                            <h2>two fashiopn desginers busy with 2020 winter fashion</h2>
+                            <p>lorem ipsume dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
+                                incicdidunt ut labore et dolore magna aliqua minim..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4 col-sm-6 col-12  border-left ">
-          <div class="card-style">
-            <div class="img">
-              <img src="images/yoga 1.png" alt="">
-            </div>
-            <div class="text">
-              <h5>Classic Yoga</h5>
-              <p>Weight loss can have causes that aren't due to underlying disease. Examples include dieting, exercise,
-                malnutrition or lack of access to food.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-12">
-          <div class="card-style">
-            <div class="img">
-              <img src="images/bicycle 1.png" alt="">
-            </div>
-            <div class="text">
-              <h5>Cycling</h5>
-              <p>Weight loss can have causes that aren't due to underlying disease. Examples include dieting, exercise,
-                malnutrition or lack of access to food.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-12 top-border ">
-          <div class="card-style">
-            <div class="img">
-              <img src="images/biceps.png" alt="">
-            </div>
-            <div class="text">
-              <h5>Body Building</h5>
-              <p>Weight loss can have causes that aren't due to underlying disease. Examples include dieting, exercise,
-                malnutrition or lack of access to food.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-12 top-border  border-left ">
-          <div class="card-style">
-            <div class="img">
-              <img src="images/fitness.png" alt="">
-            </div>
-            <div class="text">
-              <h5>Musculation</h5>
-              <p>Weight loss can have causes that aren't due to underlying disease. Examples include dieting, exercise,
-                malnutrition or lack of access to food.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4  col-sm-6 col-12 top-border ">
-          <div class="card-style">
-            <div class="img">
-              <img src="images/runer-silhouette-running-fast.png" alt="">
-            </div>
-            <div class="text">
-              <h5>Fitness Running</h5>
-              <p>Weight loss can have causes that aren't due to underlying disease. Examples include dieting, exercise,
-                malnutrition or lack of access to food.</p>
-            </div>
-          </div>
-        </div>
+    </section>
+    <!-- ========== End cards-section ========== -->
 
-      </div>
-    </div>
-  </section>
-  <!-- cards section close-->
-  <section class="Plans">
-    <div class="container">
-      <h3 class="heading-style pb-2">Subscribe To <span style="color:var(--text-color)">Plans</span></h3>
-        <div class="row mt-5">
-          <div class="col-md-4" id="padding-gap">
-            <div class="Plans-card">
-              <div class="text">
-                <h5>Fit</h5>
-                <p>Plan Exp.  16/11/2024</p>
-                <h4> ₹1200<span class="Month"> /Month </span></h4>
-                <p class="mt-2"> Streaming</p>
-                <button class="Select"> Select Plan</button>
-              </div>
-             
+    <!-- ========== Start logo-slider ========== -->
+    <section class="slider">
+        <div class="container">
+            <h4>TRUSTED BY THE BEST IN THE BUSINESS</h4>
+            <div class="style-box">
+                <div class="owl-carousel owl-theme" id="slider-1">
+                    <div class="item">
+                        <img src="images/logo-1.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="images/logo-2.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="images/logo-1.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="images/logo-2.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="images/logo-2.png" alt="">
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-4" id="padding-gap">
-            <div class="Plans-card ">
-              <div class="text">
-                <h5>Fit</h5>
-                <p>Plan Exp.  16/11/2024</p>
-                <h4> ₹1200<span class="Month"> /Month </span></h4>
-                <p class="mt-2"> Streaming</p>
-                <button class="Select"> Select Plan</button>
-              </div>
+        </div>
+    </section>
+    <!-- ========== End logo-slider ========== -->
+
+    <!-- ========== Start slider-2 ========== -->
+    <section class="slider-2">
+        <div class="container">
+            <div class="edit-box">
+                <div class="owl-carousel owl-theme" id="slider-2">
+                    <div class="item">
+                        <p>Lorem Ipsum text goes here. Space for dummy text which shall be replaced once we have
+                            replacement for the same. Lorem Ipsum text goes here. Space for dummy text which shall be
+                            replaced once we have replacement for the same.</p>
+                        <div class="img-set">
+                            <div class="img">
+                                <img src="images/t-1.png" alt="">
+                            </div>
+                            <div class="text">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h5>Name of the Client </h5>
+                                <p class="Designation"> <em>Designation</em></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-4" id="padding-gap">
-            <div class="Plans-card">
-              <div class="text">
-                <h5>Fit</h5>
-                <p>Plan Exp.  16/11/2024</p>
-                <h4> ₹1200<span class="Month"> /Month </span></h4>
-                <p class="mt-2"> Streaming</p>
-                <button class="Select"> Select Plan</button>
-              </div>
+            <div>
             </div>
-          </div>
         </div>
-    </div>
-  </section>
-  <!-- section close  -->
-  <section class="Trainer">
-    <div class="container">
-      <h3 class="heading-style pb-4">Join Out  <span style="color:var(--text-color)">Trainer</span></h3>
-      <div class="row mt-5">
-        <div class="col-md-4 col-sm-6 col-12 gap-set">
-          <img src="images/one-1.png" alt="">
-        </div>
-        <div class="col-md-4 col-sm-6 col-12 gap-set">
-          <img src="images/two-2.png" alt="">
-        </div>
-        <div class="col-md-4 col-sm-6 col-12 gap-set">
-          <img src="images/three-3.png" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-<!-- section close  --> 
-  <section class="Why">
-    <div class="container">
-    <h3 class="heading-style">Join Out  <span style="color:var(--text-color)">Trainer</span></h3>
-      <div class="row mt-5">
-        <div class="col-md-6 ">
-          <div class="left-side-text">
-            <span class="padding">Best Gym</span>
-            <span class="padding">Experts Coach</span>
-            <span class="padding">Good Workout Facilities</span>
-            <span class="padding">Consultation With Experts</span>
-          </div>
-        </div>
-        <div class="col-md-6 d-flex justify-content-end">
-          <div class="pics-set">
-            <img src="images/women.png" alt="" class= "img-top">
-            <img src="images/men (1).png" alt="" class="img-bottom">
-          </div>
+    </section>
+    <!-- ========== End slider-2 ========== -->
 
+    <!-- ========== Start footer ========== -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12 ">
+                    <div class="edit-box">
+                        <h3>- logo here -</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12 ">
+                    <div class="edit-box">
+                        <h3>SOLUTIONS</h3>
+                        <li><a href="#"> Cloud Migration</a></li>
+                        <li><a href="#"> Microsoft 365</a></li>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12 ">
+                    <div class="edit-box">
+                        <h3>QUICK LINKS</h3>
+                        <li><a href="#"> About Us</a></li>
+                        <li><a href="#"> What We Do</a></li>
+                        <li><a href="#"> Team Sync Experts</a></li>
+                        <li><a href="#"> Contact Us</a></li>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12 ">
+                    <div class="edit-box">
+                        <h3>LET'S CONNECT</h3>
+                        <li><a href="#"> hello@syncexperts.com</a></li>
+                    </div>
+                </div>
+            </div>
         </div>
+    </footer>
+    <!-- ========== End footer ========== -->
+    <!-- js file  -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 
-      </div>
+    <!-- slider-1 jq  -->
+    <script>
+        var owl = $('#slider-1');
+        owl.owlCarousel({
+            items: 5,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        });
+    </script>
 
-    </div>
+    <!-- slider-2 jq  -->
+    <script>
+        var owl = $('#slider-2');
+        owl.owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+    </script>
 
-  </section>
-  <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- header scroll color jq  -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 100) {
+                    $("header").css({ "background-color": "#510FAC" });
+                }
+                else {
+                    $("header").css({ "background-color": "" });
+                }
+
+            })
+        })
+    </script>
 </body>
+
 </html>
