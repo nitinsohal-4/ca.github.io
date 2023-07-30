@@ -1,44 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Montserrat:wght@500&family=Open+Sans:wght@500&display=swap');
+
+/* canva sans font family is missing so i will use the open sans */
+@font-face {
+    font-family: 'montserrat-arabicbold';
+    src: url('../fonts/montserrat-arabic_bold_700-webfont.woff2') format('woff2'),
+        url('../fonts/montserrat-arabic_bold_700-webfont.woff') format('woff');
+
+}
 
 :root {
-    --bg-color-1: #0000;
-    --btn-bg: linear-gradient(90deg, #F66844 0%, #FF921B 100%);
-    --text-color: #FF921B;
-    --font-family: 'Noto Sans';
-    --bg-color-2: #ff921b;
-}
-
-.btn-style {
-    width: 80px;
-    height: 38px;
-    border: none;
-    outline: none;
-    font-family: var(--font-family);
-    margin-left: 10px;
-    background: linear-gradient(90deg, #F66844 0%, #FF921B 100%);
-    font-weight: 400;
-    font-size: 16px;
-    color: #FFFFFF;
-}
-
-.heading-style {
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 47px;
-    color: #FFFFFF;
+    --heading-color: #0B55A4;
+    --text-hover: #9E2DDE;
+    --bg: linear-gradient(153deg, #2D6AC9 0%, #510FAC 100%);
 }
 
 header {
-    background-color: #000;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 777 !important;
+}
+
+.edit-one {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+.btn-style {
+    width: max-content;
+    color: #fff;
+    min-width: 200px;
+    border-radius: 9px;
+    border: 1px solid white;
+    font-family: 'montserrat-arabicbold';
+    background: linear-gradient(91deg, #9B2EDE 0%, #1666D2 100%);
+    padding: 8px 0px 8px 0px;
+    margin-top: 13px;
+}
+
+.btn-2 {
+    font-family: 'montserrat-arabicbold';
+    padding: 8px 0px 8px 0px;
+    width: max-content;
+    color: #fff;
+    min-width: 200px;
+    border-radius: 9px;
+    background-color: transparent;
+    margin-left: 12px;
+    border: 1px solid white;
+}
+
+.btn-2:hover {
+    background: linear-gradient(91deg, #9B2EDE 0%, #1666D2 100%);
+}
+
+.navbar-brand .logo-style {
+    font-size: 25px;
+    font-family: 'montserrat-arabicbold';
+    line-height: 26px;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
 }
 
 .nav-link {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    color: #FFFFFF !important;
-    margin: 0px 13px;
+    font-size: 13px;
+    font-family: 'Open Sans';
+    font-weight: 600 !important;
+    margin: 0px 11px;
+    text-transform: uppercase;
     position: relative;
+    color: #fff !important;
 }
 
 .nav-link::before {
@@ -46,387 +78,369 @@ header {
     content: '';
     height: 2px;
     width: 0%;
-    background-color: var(--text-color);
-    left: 0%;
-    bottom: -9%;
-    transition: 0.2s;
+    left: 0;
+    bottom: -4%;
     left: 50%;
+    transition: 0.3s;
+}
 
+.nav-link:hover {
+    color: var(--text-hover) !important;
 }
 
 .nav-link:hover::before {
     width: 100%;
     left: 0%;
+    background-color: var(--text-hover);
 }
 
-.navbar-brand img {
-    width: 199.25px;
-    height: 58px;
-    object-fit: contain;
-}
+/* header close  */
 
-.Join {
-    width: 80px;
-    height: 38px;
-    border: none;
-    outline: none;
-    font-family: var(--font-family);
-    margin-left: 10px;
-    background: linear-gradient(90deg, #F66844 0%, #FF921B 100%);
-    font-weight: 400;
-    font-size: 16px;
-    color: #FFFFFF;
-}
-
-.menu {
-
-    display: none !important;
-}
-
-/* navbar close  */
-.banner-section {
-    min-height: 100vh;
-    background-image: url(../images/banner-1.jpg);
+/***** banner *****/
+.banner {
+    min-height: 700px;
+    background-image: url("../images/bg");
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
-}
-
-.banner-section .left-text {
-    padding-top: 120px;
-}
-
-.banner-section .left-text h2 {
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 64px;
-    line-height: 75px;
-    color: #FFFFFF;
-    width: 100%;
-    max-width: 400px;
-}
-
-.banner-section .left-text p {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: rgba(255, 255, 255, 0.5);
-    width: 100%;
-    max-width: 400px;
-    padding-top: 22PX;
-}
-
-.banner-section .btns {
-    margin-top: 60px;
-    display: flex;
-    align-items: center;
-}
-
-.banner-section .Get-Started {
-    max-width: 136px;
-    width: 100%;
-    height: 44px;
-    border: none;
-    font-weight: 400;
-    font-size: 16px;
-    color: #FFFFFF;
-    font-family: var(--font-family);
-    background: linear-gradient(90deg, #F66844 0%, #FF921B 100%, rgba(255, 255, 255, 0) 100%);
-}
-
-.banner-section .video-btn {
-    margin-left: 22px;
-    width: 100%;
-    max-width: 174px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    gap: 13px;
-    border: 1px solid;
-    border-image: linear-gradient(45deg, #F66844, #FF921B) 1;
-    padding: 12px;
-    overflow: hidden;
-    position: relative;
-    z-index: 7;
-    transition: 0.2s;
-}
-
-.banner-section .video-btn::before {
-    position: absolute;
-    content: '';
-    width: 174px;
-    height: 0px;
-    left: 0%;
-    top: 0%;
-    z-index: -7;
-    transition: 0.6s;
-
-}
-
-.banner-section .video-btn:hover::before {
-    height: 44px;
-    background-color: var(--bg-color-2);
-}
-
-.banner-section .video-btn:hover {
-    color: white;
-}
-
-
-.banner-section .video-btn .Watch {
-    border: none;
-    color: #FFF;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-
-
-}
-
-.banner-section .icons {
-    background-image: url("../images/shape.png");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.banner .text {
+    margin-top: 230px;
+}
+
+.banner .text h3 {
+    font-family: 'montserrat-arabicbold';
+    font-weight: 800;
+    color: #fff;
+    font-size: 35px !important;
     width: 100%;
-    max-width: 245px;
-    height: 60px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row-reverse;
-    position: fixed;
-    bottom: 0%;
-    left: 0%;
+    max-width: 400px;
+    line-height: 38px;
 }
 
-.banner-section .icons img {
-    height: 30px;
-    width: 30px;
-    object-fit: contain;
+/***** End banner *****/
+
+/***** bg-color *****/
+.bg-color {
+    padding: 100px 0px 100px 0px;
+    background-color: #030522;
 }
 
-/* banner section css close  */
+/***** End bg-color *****/
+
+
+/***** cards *****/
 .cards {
-    padding: 50px 0px 50px 0px;
-    background: #000;
+    min-height: 500px;
+    background-image: url("../images/banner-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 80px;
+
 }
 
-.cards .padding {
-    padding-bottom: 25px;
-}
-
-.cards .card-style {
+.cards .style-box {
+    padding: 10px;
+    border-radius: 13px;
     text-align: center;
-    margin-top: 45px;
-    padding-bottom: 45px;
-    padding-top: 7px;
+    margin-top: -130px;
+    background: linear-gradient(153deg, #2D6AC9 0%, #510FAC 100%);
 }
 
-.cards .border-left {
-    border-left: 1px solid var(--bg-color-2);
-    border-right: 1px solid var(--bg-color-2);
-}
-
-.cards .top-border {
-    border-top: 1px solid var(--bg-color-2);
-}
-
-.cards .card-style img {
-    width: 60px;
-    height: 60px;
+.cards .style-box .img-box img {
+    height: 100px;
+    width: 100px;
     object-fit: contain;
+    margin-top: 25px;
+
 }
 
-.card-style .text {
-    margin-top: 23px;
-}
-
-.card-style .text h5 {
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 19px;
-    color: #FFFFFF;
-}
-
-.card-style .text p {
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 23px;
-    color: rgba(255, 255, 255, 0.5);
-    padding-top: 29px;
+.cards .style-box .text h4 {
+    color: #fff;
     width: 100%;
+    max-width: 214px;
+    font-size: 26px;
+    line-height: 27px;
     margin: auto;
     display: block;
-    max-width: 335px;
+    font-family: 'montserrat-arabicbold';
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-/* cards section css close  */
-.Plans {
-    padding: 50px 0px 50px 0px;
-    background-color: #000;
+.cards .set-padding {
+    padding-left: 27px;
+    padding-right: 27px;
+
 }
 
-.Plans #padding-gap {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+.cards .ABOUT {
+    color: var(--heading-color);
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'montserrat-arabicbold';
+    padding-top: 100px;
 }
 
-.Plans .Plans-card {
-    text-align: center;
-    transition: 0.2s;
-    min-height: 400px !important;
-    background: #1b1b1b;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-}
-
-.Plans .Plans-card::before {
-    position: absolute;
-    content: 'Recommended';
-    width: 141px;
-    height: 36px;
-    background-color: white;
-    top: -2%;
-    padding: 6px 20px 10px 20px;
-    background: linear-gradient(90deg, #F66844 0%, #FF921B 100%, rgba(255, 255, 255, 0) 100%);
-    color: white;
-    display: none;
-    transition: 0.2s;
-}
-
-.Plans .Plans-card:hover::before {
-    display: block;
-    cursor: pointer;
-}
-
-.Plans .Plans-card:hover {
-    transform: translateY(-20px);
-}
-
-.Plans .Plans-card h5 {
-    font-size: 27px;
-    line-height: 28px;
-    color: #FFFFFF;
-}
-
-.Plans .Plans-card P {
-    font-weight: 400;
+.cards .text-2 p {
+    color: #080808;
     font-size: 18px;
-    line-height: 19px;
-    color: rgba(255, 255, 255, 0.5);
-    padding-top: 19px;
-}
-
-.Plans .Plans-card h4 {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
-    color: #FFFFFF;
-    padding-top: 28px;
-}
-
-.Plans .Plans-card .Month {
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.5);
-    letter-spacing: 2px;
-}
-
-.Plans .Plans-card .Select {
-    width: 100%;
-    max-width: 200px;
-    height: 44px;
-    border: 1px solid #FF921B !important;
-    background-color: transparent;
-    border: none;
-    color: #FFF;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    margin-top: 19px;
-}
-
-.nav-link::before {
-    position: absolute;
-    content: '';
-    height: 2px;
-    width: 0%;
-    background-color: var(--text-color);
-    left: 0%;
-    bottom: -9%;
-    transition: 0.2s;
-    left: 50%;
-
-}
-
-.nav-link:hover::before {
-    width: 100%;
-    left: 0%;
-}
-
-.Plans .padding-bottom {
-    margin-top: 21px;
-}
-
-/* section clsoe  */
-.Trainer {
-    padding: 50px 0px 50px 0px;
-    background-color: #000;
-}
-
-.Trainer img {
-    width: 100%;
-}
-
-.Trainer .gap-set {
-    padding-left: 25px;
+    line-height: 27px;
+    text-align: justify;
     padding-right: 25px;
 }
 
-/* section close  */
-.Why {
-    padding: 50px 0px 50px 0px;
-    background-color: #000;
-}
+/***** End cards *****/
 
-.Why .left-side-text {
+
+/***** banner-2 *****/
+.banner-2 {
+    min-height: 500px;
+    background-image: url("../images/banner-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
+    align-items: center;
 }
 
-.Why .padding {
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
-    color: #FFFFFF;
-    padding: 20px 0px;
+.banner-2 .text h5 {
+    font-family: 'montserrat-arabicbold';
+    font-weight: 800;
+    color: #fff;
+    font-size: 40px !important;
+    line-height: 41px;
+    width: 100%;
+    max-width: 370px;
+    padding-bottom: 2px;
+}
+
+.banner-2 .text p {
+    font-family: 'Open Sans';
+    font-weight: 500;
+    color: #fff;
+    width: 100%;
+    max-width: 376px;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.banner-2 .add-margin {
+    margin: 5px 0px;
+}
+
+/***** End banner-2 *****/
+
+/***** cards-section *****/
+.cards-section {
+    padding: 100px 0px 95px;
+    background-color: rgb(251, 251, 251);
+}
+.cards-section .RECENT {
+    color: var(--heading-color);
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'montserrat-arabicbold';
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.cards-section .style-box {
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.cards-section .style-box .img img {
+    width: 100%;
+}
+
+.cards-section .style-box .text {
+    padding-left: 22px;
+    padding-right: 18px;
+    padding-top: 23px;
+    padding-bottom: 8px;
+
+}
+
+.cards-section .style-box .text .set-li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 26px;
+}
+
+.cards-section .style-box .text i {
+    color: #F896B1;
+    font-size: 16px;
+}
+
+.cards-section .style-box .text span {
+    color: #676767;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    margin-left: 6px;
+    text-transform: capitalize;
+}
+
+.cards-section .style-box .text h2 {
+    font-family: 'montserrat-arabicbold';
+    font-weight: 800;
+    font-size: 20px !important;
+    width: 100%;
+    padding-top: 18px;
+    text-transform: capitalize;
+    max-width: 400px;
+    line-height: 27px;
+}
+
+.cards-section .style-box .text p {
+    font-family: 'Open Sans';
+    color: #676767;
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 25px;
+    padding-top: 3px;
+}
+
+/***** End cards-section *****/
+
+/***** slider *****/
+.slider {
+    padding: 50px 0px 50px 0px;
+}
+
+.slider h4 {
+    color: var(--heading-color);
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    padding: 22px 0px 0px 0px;
+    font-family: 'montserrat-arabicbold';
+}
+
+.slider img {
+    height: 118px !important;
+    width: 160px !important;
+    object-fit: contain;
+    transition: 0.3s;
+    filter: grayscale(100%);
+}
+
+.slider img:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+/***** End slider *****/
+
+/***** slider-2 *****/
+.slider-2 {
+    padding: 16px 0px 35px 0px;
+}
+
+.slider-2 .edit-box {
+    padding: 40px 43px 40px 85px;
+    border-radius: 13px;
+    background: linear-gradient(141deg, #2B6ECA 0%, #4F12AD 100%);
     position: relative;
 }
 
-.Why .padding::before {
-    height: 8px;
-    width: 8px;
-    border-radius: 50%;
+.slider-2 .edit-box::before {
     position: absolute;
     content: '';
-    background-color: #FF921B;
-    left: -3%;
-    top: 39%;
+    height: 100px;
+    width: 160px;
+    background-size: 140px;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+    background-image: url("../images/arrow-1-removebg-preview.png");
+    right: 8%;
+    bottom: 48px;
+    opacity: 0.1;
 }
-.Why .pics-set{
-    position: relative;
+
+.slider-2 .edit-box p {
+    color: #fff;
+    font-family: 'Open Sans';
+    width: 100%;
+    font-size: 18px;
+    max-width: 935px;
+    line-height: 30px;
 }
-.Why .img-top {
-    transform: translateY(-90px);
+
+.slider-2 .edit-box .img img {
+    height: 100px;
+    width: 100px;
 }
-.Why .img-bottom {
-    transform: translateX(10px);
+
+.slider-2 .edit-box .img-set {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.slider-2 .edit-box .img-set i {
+    color: orange;
+    margin: 0px 0.2px;
+}
+
+.slider-2 .edit-box .img-set h5 {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Open Sans';
+    color: #fff;
+    padding-top: 2px;
+}
+
+.slider-2 .edit-box .img-set .Designation {
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    margin-top: -7px;
+}
+
+/***** End slider-2 *****/
+
+/***** footer *****/
+footer {
+    min-height: 500px;
+    background-image: url("../images/footer-img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer .edit-box {
+    margin-top: 55px;
+}
+
+footer .edit-box h3 {
+    font-size: 25px;
+    font-family: 'Open Sans';
+    color: var(--heading-color);
+    font-weight: 800;
+    line-height: 25px;
+    margin-bottom: 13px;
+}
+
+footer .edit-box a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 17px;
+    color: black;
+    font-family: 'Open Sans';
+    transition: 0.2s;
+}
+footer .edit-box a:hover{
+    color: var(--text-hover);
+}
+
+footer .edit-box li {
+    margin: 2px 0px;
+    list-style: none;
 
 }
+
+/***** End footer *****/
